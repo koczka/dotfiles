@@ -1,0 +1,43 @@
+import = [
+  # uncomment the flavour you want below:
+  # "~/.config/alacritty/catppuccin-latte.toml"
+  # "~/.config/alacritty/catppuccin-frappe.toml"
+  "~/.config/alacritty/catppuccin-macchiato.toml"
+  # "~/.config/alacritty/catppuccin-mocha.toml"
+]
+live_config_reload = true
+
+[cursor.style]
+blinking = "Off"
+shape = "Beam"
+
+[env]
+TERM = "xterm-256color"
+
+[font]
+builtin_box_drawing = true
+size = 14
+
+[font.italic]
+family = "JetBrainsMonoNL Nerd Font"
+
+[font.bold]
+family = "JetBrainsMonoNL Nerd Font"
+
+[font.normal]
+family = "JetBrainsMonoNL Nerd Font"
+
+[window]
+decorations = "buttonless"
+dynamic_padding = false
+opacity = 0.98
+blur = true
+
+[window.padding]
+x = 6
+y = 6
+
+[bell]
+animation = 'EaseOutSine'
+duration = 200
+color = "#F5E0DC"
