@@ -30,7 +30,7 @@ family = "JetBrainsMonoNL Nerd Font"
 [window]
 decorations = "buttonless"
 dynamic_padding = false
-opacity = 0.98
+opacity = 0.96
 blur = true
 
 [window.padding]
