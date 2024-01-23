@@ -22,11 +22,6 @@ return {
 
 			mason_null_ls.setup({
 				automatic_installation = true,
-				ensure_installed = {
-					"prettier",
-					"stylua",
-					"eslint_d",
-				},
 			})
 		end,
 	},

@@ -22,28 +22,15 @@ return {
 			}, ","),
 		}
 
-		lspconfig.emmet_ls.setup({})
-		lspconfig.tailwindcss.setup({})
-		lspconfig.jsonls.setup({
-			capabilities = capabilities,
-		})
-		lspconfig.cssls.setup({
-			capabilities = capabilities,
-		})
-		lspconfig.html.setup({
-			capabilities = capabilities,
-		})
-		lspconfig.lua_ls.setup({
-			capabilities = capabilities,
-			settings = { -- custom settings for lua
-				Lua = {
-					diagnostics = {
-						globals = { "vim" },
-					},
-				},
-			},
-		})
+		-- Enable nvim cmp capabilities on servers
+		local servers = { "emmet_ls", "tailwindcss", "jsonls", "cssls", "html", "lua_ls", "tsserver" }
+		for _, lsp in ipairs(servers) do
+			lspconfig[lsp].setup({
+				capabilities = capabilities,
+			})
+		end
 
+		-- Angular server config
 		lspconfig.angularls.setup({
 			cmd = cmd,
 			capabilities = capabilities,
