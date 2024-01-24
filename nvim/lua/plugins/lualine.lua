@@ -1,9 +1,17 @@
 return {
 	"nvim-lualine/lualine.nvim",
 	config = function()
-		require("lualine").setup({
-			options = {
-				theme = "catppuccin",
+		local git_blame = require("gitblame")
+		local lualine = require("lualine")
+
+		lualine.setup({
+			-- options = {
+			-- 	theme = "catppuccin",
+			-- },
+			sections = {
+				lualine_c = {
+					{ git_blame.get_current_blame_text, cond = git_blame.is_blame_text_available },
+				},
 			},
 		})
 	end,
