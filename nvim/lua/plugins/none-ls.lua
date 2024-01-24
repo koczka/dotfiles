@@ -3,6 +3,7 @@ return {
 	config = function()
 		local null_ls = require("null-ls")
 		local augroup = vim.api.nvim_create_augroup("LspFormatting", {})
+		vim.keymap.set("n", "<leader>ft", vim.lsp.buf.format, { silent = true })
 
 		null_ls.setup({
 			sources = {
