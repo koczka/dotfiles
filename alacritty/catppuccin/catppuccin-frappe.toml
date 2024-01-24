@@ -1,4 +1,3 @@
-
 [colors.primary]
 background = "#303446"
 foreground = "#C6D0F5"
@@ -20,6 +19,10 @@ background = "#A5ADCE"
 [colors.search.focused_match]
 foreground = "#303446"
 background = "#A6D189"
+
+[colors.footer_bar]
+foreground = "#303446"
+background = "#A5ADCE"
 
 [colors.hints.start]
 foreground = "#303446"

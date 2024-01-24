@@ -1,9 +1,16 @@
 import = [
-  # uncomment the flavour you want below:
-  # "~/.config/alacritty/catppuccin-latte.toml"
-  # "~/.config/alacritty/catppuccin-frappe.toml"
-  "~/.config/alacritty/catppuccin-macchiato.toml"
-  # "~/.config/alacritty/catppuccin-mocha.toml"
+  # Cattpuccin 
+  # "~/.dotfiles/alacritty/catppuccin/catppuccin-latte.toml"
+  # "~/.dotfiles/alacritty/catppuccin/catppuccin-frappe.toml"
+  # "~/.dotfiles/alacritty/catppuccin/catppuccin-macchiato.toml"
+  # "~/.dotfiles/alacritty/catppuccin/catppuccin-mocha.toml"
+  # Everforest
+  "~/.dotfiles/alacritty/everforest/everforest-dark-hard.toml"
+  # "~/.dotfiles/alacritty/everforest/everforest-dark-medium.toml"
+  # "~/.dotfiles/alacritty/everforest/everforest-dark-soft.toml"
+  # "~/.dotfiles/alacritty/everforest/everforest-light-hard.toml"
+  # "~/.dotfiles/alacritty/everforest/everforest-light-medium.toml"
+  # "~/.dotfiles/alacritty/everforest/everforest-light-soft.toml"
 ]
 live_config_reload = true
 
@@ -30,7 +37,7 @@ family = "JetBrainsMonoNL Nerd Font"
 [window]
 decorations = "buttonless"
 dynamic_padding = false
-opacity = 0.96
+opacity = 0.97
 blur = true
 
 [window.padding]
