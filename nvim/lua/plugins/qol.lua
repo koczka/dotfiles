@@ -6,11 +6,7 @@ return {
 		"norcalli/nvim-colorizer.lua",
 		config = function()
 			require("colorizer").setup({
-				"css",
-				"toml",
-				"yaml",
-				"javascript",
-				"typescript",
+				"*",
 				html = {
 					mode = "foreground",
 				},
