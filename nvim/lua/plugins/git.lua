@@ -10,5 +10,5 @@ return {
 		config = function()
 			vim.g.gitblame_display_virtual_text = 0 -- Disable virtual text
 		end,
-	}, -- git blame information
+	},
 }
