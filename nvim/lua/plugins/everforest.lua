@@ -8,6 +8,9 @@ return {
 		require("everforest").setup({
 			-- Your config here
 		})
+
+		vim.api.nvim_set_hl(0, "StatusLineNC", {})
+		vim.api.nvim_set_hl(0, "NvimTreeStatusLineNC", {})
 		vim.cmd.colorscheme("everforest")
 	end,
 }
