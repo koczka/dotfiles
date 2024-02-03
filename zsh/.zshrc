@@ -44,7 +44,7 @@ plugins=(git
 )
 
 source $ZSH/oh-my-zsh.sh
-source ~/.zsh/catppuccin_macchiato-zsh-syntax-highlighting.zsh
+# source ~/.zsh/catppuccin_macchiato-zsh-syntax-highlighting.zsh
 source <(ng completion script)
 
 # Aliases
