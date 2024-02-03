@@ -1,5 +1,5 @@
 import = [
-  # Cattpuccin 
+  # Cattpucc1n 
   # "~/.dotfiles/alacritty/catppuccin/catppuccin-latte.toml"
   # "~/.dotfiles/alacritty/catppuccin/catppuccin-frappe.toml"
   # "~/.dotfiles/alacritty/catppuccin/catppuccin-macchiato.toml"
@@ -37,7 +37,7 @@ family = "JetBrainsMonoNL Nerd Font"
 [window]
 decorations = "buttonless"
 dynamic_padding = false
-opacity = 0.97
+opacity = 0.98
 blur = true
 
 [window.padding]
