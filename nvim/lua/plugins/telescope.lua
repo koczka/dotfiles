@@ -9,7 +9,7 @@ return {
 			vim.keymap.set("n", "<leader>fc", "<cmd>Telescope grep_string<cr>", opts) -- find string under cursor in current working directory
 			vim.keymap.set("n", "<leader>fb", "<cmd>Telescope buffers<cr>", opts) -- list open buffers in current neovim instance
 			vim.keymap.set("n", "<leader>fh", "<cmd>Telescope help_tags<cr>", opts) -- list available help tags
-			vim.keymap.set("n", "<leader>fn", "<cmd>Telescope notify<cr>", opts) -- list all notifications
+			vim.keymap.set("n", "<leader>fn", "<cmd>Telescope noice<cr>", opts) -- list all notifications
 		end,
 	},
 	{
@@ -33,7 +33,7 @@ return {
 			})
 
 			telescope.load_extension("ui-select")
-			telescope.load_extension("notify")
+			telescope.load_extension("noice")
 		end,
 	},
 }
