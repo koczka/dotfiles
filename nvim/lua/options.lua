@@ -1,5 +1,7 @@
 local opt = vim.opt -- for conciceness
 
+vim.env.PATH = "/opt/homebrew/opt/fzf" .. vim.env.PATH
+
 -- line numbers
 opt.relativenumber = true
 opt.number = true
