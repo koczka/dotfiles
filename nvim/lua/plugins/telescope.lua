@@ -1,7 +1,13 @@
 return {
 	{
 		"nvim-telescope/telescope.nvim",
-		dependencies = "tsakirist/telescope-lazy.nvim",
+		dependencies = {
+			{ "tsakirist/telescope-lazy.nvim" },
+			{
+				"nvim-telescope/telescope-fzf-native.nvim",
+				build = "make",
+			},
+		},
 		config = function()
 			local opts = { noremap = true, silent = true }
 			vim.keymap.set("n", "<leader>ff", "<cmd>Telescope find_files<cr>", opts) -- find files within current working directory, respects .gitignore
@@ -34,6 +40,7 @@ return {
 
 			telescope.load_extension("ui-select")
 			telescope.load_extension("noice")
+			telescope.load_extension("fzf")
 		end,
 	},
 }
