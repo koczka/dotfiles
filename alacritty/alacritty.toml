@@ -36,13 +36,14 @@ family = "JetBrainsMonoNL Nerd Font"
 
 [window]
 decorations = "buttonless"
-dynamic_padding = false
-opacity = 1
-# blur = true
+# decorations = "none"
+dynamic_padding = true
+opacity = 0.96
+blur = true
 
 [window.padding]
-x = 8
-y = 8
+x = 10
+y = 6
 
 [bell]
 animation = 'EaseOutSine'

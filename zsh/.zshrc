@@ -43,6 +43,7 @@ plugins=(git
   zsh-autosuggestions
 )
 
+source ~/.secrets.zsh
 source $ZSH/oh-my-zsh.sh
 # source ~/.zsh/catppuccin_macchiato-zsh-syntax-highlighting.zsh
 source <(ng completion script)
@@ -52,16 +53,17 @@ alias l='lsd -l'
 alias ls='lsd'
 alias vim="nvim"
 alias vi="nvim"
-alias oldvim="vim"
 alias cat="bat"
-alias mc="mc --nosubshell"
 alias zshrc="vi ~/.dotfiles/zsh/.zshrc"
 alias tmuxrc="vi ~/.dotfiles/tmux/.tmux.conf"
 alias nvimrc="vi ~/.dotfiles/nvim/"
 alias alacrittyrc="vi ~/.dotfiles/alacritty/alacritty.toml"
-alias sourcezsh='source ~/.zshrc'
+alias sketchyrc="vi ~/.dotfiles/sketchybar/sketchybarrc"
+alias restartsketchy="brew services restart sketchybar"
 
 bindkey -s '^g' 'lazygit\n'
 
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
+
+PATH=~/.console-ninja/.bin:$PATH

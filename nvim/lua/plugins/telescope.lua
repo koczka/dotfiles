@@ -28,7 +28,6 @@ return {
 						"node_modules",
 						"png",
 						"jpg",
-						"svg",
 					},
 				},
 				extensions = {

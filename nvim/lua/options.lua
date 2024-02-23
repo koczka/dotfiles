@@ -2,6 +2,9 @@ local opt = vim.opt -- for conciceness
 
 vim.env.PATH = "/opt/homebrew/opt/fzf" .. vim.env.PATH
 
+--cmdheight
+opt.cmdheight = 0
+
 -- line numbers
 opt.relativenumber = true
 opt.number = true
@@ -43,4 +46,4 @@ opt.splitbelow = true
 opt.iskeyword:append("-")
 
 -- disable mouse support
-vim.opt.mouse = nil
+vim.opt.mouse = ""

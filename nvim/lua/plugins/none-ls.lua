@@ -9,8 +9,12 @@ return {
 			sources = {
 				null_ls.builtins.formatting.stylua,
 				null_ls.builtins.formatting.prettier,
-				null_ls.builtins.diagnostics.stylelint,
 				null_ls.builtins.diagnostics.tsserver,
+				null_ls.builtins.diagnostics.stylelint.with({
+					condition = function(utils)
+						return utils.root_has_file({ ".stylelintrc.json", ".stylelintrc.js" }) -- only enable if root has .eslintrc.js or .eslintrc.cjs
+					end,
+				}),
 				null_ls.builtins.diagnostics.eslint_d.with({
 					condition = function(utils)
 						return utils.root_has_file({ ".eslintrc.js", ".eslintrc.cjs" }) -- only enable if root has .eslintrc.js or .eslintrc.cjs
