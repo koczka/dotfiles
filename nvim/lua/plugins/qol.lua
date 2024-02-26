@@ -1,5 +1,6 @@
 return {
 	-- quality of life plugins
+	{ "nvim-lua/plenary.nvim" },
 	{ "vim-scripts/ReplaceWithRegister" }, -- replace with register contents using motion (gr + motion)
 	{ "christoomey/vim-tmux-navigator" }, -- tmux & split window navigation
 	{
