@@ -34,6 +34,12 @@ return {
 					["<Tab>"] = cmp.mapping.select_next_item(),
 					["<S-Tab>"] = cmp.mapping.select_prev_item(),
 					["<CR>"] = cmp.mapping.confirm({ select = true }),
+					["<Down>"] = cmp.mapping(function(fallback)
+						fallback()
+					end, { "i" }),
+					["<Up>"] = cmp.mapping(function(fallback)
+						fallback()
+					end, { "i" }),
 				}),
 				sources = cmp.config.sources({
 					{ name = "nvim_lsp" },
