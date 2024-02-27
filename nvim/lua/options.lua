@@ -16,7 +16,7 @@ opt.expandtab = true
 opt.autoindent = true
 
 -- line wrapping
-opt.wrap = false
+-- opt.wrap = false
 
 -- search settings
 opt.ignorecase = true
@@ -47,3 +47,6 @@ opt.iskeyword:append("-")
 
 -- disable mouse support
 vim.opt.mouse = ""
+
+vim.opt.title = true
+vim.opt.backup = false
