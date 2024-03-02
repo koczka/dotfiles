@@ -42,10 +42,10 @@ return {
 					end, { "i" }),
 				}),
 				sources = cmp.config.sources({
-					{ name = "nvim_lsp" },
 					{ name = "luasnip" }, -- For luasnip users.
-					{ name = "path" }, -- file system paths
 					{ name = "buffer" },
+					{ name = "nvim_lsp" },
+					{ name = "path" }, -- file system paths
 				}),
 				formatting = {
 					format = function(_, vim_item)
