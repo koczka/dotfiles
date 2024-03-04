@@ -4,16 +4,11 @@ return {
 	{ "vim-scripts/ReplaceWithRegister" }, -- replace with register contents using motion (gr + motion)
 	{ "christoomey/vim-tmux-navigator" }, -- tmux & split window navigation
 	{
-		"norcalli/nvim-colorizer.lua",
-		config = function()
-			require("colorizer").setup({
-				"*",
-				html = {
-					mode = "foreground",
-				},
-			})
-		end,
-	}, -- hex code colorizer
+		"brenoprata10/nvim-highlight-colors",
+		opts = {
+			render = "virtual",
+		},
+	},
 	{
 		"xiyaowong/transparent.nvim",
 		config = function()
