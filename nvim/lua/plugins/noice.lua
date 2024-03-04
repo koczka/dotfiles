@@ -22,6 +22,9 @@ return {
 					},
 				},
 			},
+			messages = {
+				enabled = true, -- enables the Noice messages UI
+			},
 			presets = {
 				bottom_search = false, -- use a classic bottom cmdline for search
 				command_palette = true, -- position the cmdline and popupmenu together
@@ -36,7 +39,7 @@ return {
 			level = 3,
 			top_down = true,
 			timeout = 1000,
-			background_colour = "#FFFFFF",
+			background_colour = "#e69875",
 			render = "default",
 			minimum_width = 50,
 		})
