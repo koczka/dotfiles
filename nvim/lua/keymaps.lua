@@ -16,6 +16,9 @@ keymap.set("n", "<Right>", "<nop>")
 -- clear search highlights
 keymap.set("n", "<leader>cs", ":nohl<CR>")
 
+-- keymap for messages split
+keymap.set("n", "<leader>me", ":messages<CR>")
+
 -- delete single character without copying into register
 keymap.set("n", "x", '"_x')
 
