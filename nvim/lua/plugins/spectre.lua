@@ -1,10 +1,7 @@
 return {
 	"nvim-pack/nvim-spectre",
+	opts = {},
 	config = function()
-		require("spectre").setup({
-			-- open_cmd = "topleft vs",
-		})
-
 		vim.keymap.set("n", "<leader>S", '<cmd>lua require("spectre").toggle()<CR>', {
 			desc = "Toggle Spectre",
 		})

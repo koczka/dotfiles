@@ -5,9 +5,6 @@ return {
 		opts = {
 			auto_install = true,
 		},
-		config = function()
-			require("mason").setup()
-		end,
 	},
 	{
 		"williamboman/mason-lspconfig.nvim",
@@ -20,12 +17,8 @@ return {
 		"jay-babu/mason-null-ls.nvim",
 		lazy = false,
 		event = { "BufReadPre", "BufNewFile" },
-		config = function()
-			local mason_null_ls = require("mason-null-ls")
-
-			mason_null_ls.setup({
-				automatic_installation = true,
-			})
-		end,
+		opts = {
+			automatic_installation = true,
+		},
 	},
 }

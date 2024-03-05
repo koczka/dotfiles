@@ -7,9 +7,7 @@ return {
 	},
 	{
 		"lewis6991/gitsigns.nvim",
-		config = function()
-			require("gitsigns").setup()
-		end,
+		opts = {},
 	},
 	{
 		"f-person/git-blame.nvim",
