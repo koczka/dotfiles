@@ -21,6 +21,21 @@ return {
 						winblend = 0,
 					},
 				},
+				cmdline_popup = {
+					position = {
+						row = 6,
+						col = "50%",
+					},
+					border = {
+						style = "none",
+						padding = { 1, 1 },
+					},
+					size = {
+						min_width = 60,
+						width = "auto",
+						height = "auto",
+					},
+				},
 			},
 			messages = {
 				enabled = true, -- enables the Noice messages UI
