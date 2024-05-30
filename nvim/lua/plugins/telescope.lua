@@ -29,11 +29,23 @@ return {
 						"png",
 						"jpg",
 					},
-				},
-				extensions = {
-					["ui-select"] = {
-						require("telescope.themes").get_dropdown({}),
+
+					layout_strategy = "horizontal",
+					layout_config = {
+						horizontal = {
+							preview_width = 0.6,
+							results_width = 0.4,
+						},
+						vertical = {
+							mirror = false,
+						},
+						width = 0.87,
+						height = 0.80,
+						preview_cutoff = 120,
 					},
+					path_display = { "truncate" },
+					file_sorter = require("telescope.sorters").get_fuzzy_file,
+					generic_sorter = require("telescope.sorters").get_generic_fuzzy_sorter,
 				},
 			})
 
