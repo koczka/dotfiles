@@ -2,10 +2,10 @@ import = [
   # Cattpucc1n 
   # "~/.dotfiles/alacritty/catppuccin/catppuccin-latte.toml"
   # "~/.dotfiles/alacritty/catppuccin/catppuccin-frappe.toml"
-  # "~/.dotfiles/alacritty/catppuccin/catppuccin-macchiato.toml"
+  "~/.dotfiles/alacritty/catppuccin/catppuccin-macchiato.toml"
   # "~/.dotfiles/alacritty/catppuccin/catppuccin-mocha.toml"
   # Everforest
-  "~/.dotfiles/alacritty/everforest/everforest-dark-hard.toml"
+  # "~/.dotfiles/alacritty/everforest/everforest-dark-hard.toml"
   # "~/.dotfiles/alacritty/everforest/everforest-dark-medium.toml"
   # "~/.dotfiles/alacritty/everforest/everforest-dark-soft.toml"
   # "~/.dotfiles/alacritty/everforest/everforest-light-hard.toml"
@@ -38,7 +38,7 @@ family = "JetBrainsMonoNL Nerd Font"
 decorations = "buttonless"
 # decorations = "none"
 dynamic_padding = true
-opacity = 0.94
+opacity = 0.96
 blur = true
 
 [window.padding]
