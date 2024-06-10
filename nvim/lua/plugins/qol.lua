@@ -21,4 +21,11 @@ return {
 			},
 		},
 	},
+	{
+		"tris203/precognition.nvim",
+		config = {
+			vim.keymap.set("n", "<leader>mp", ":Precognition peek<CR>", { noremap = true, silent = true }),
+			startVisible = false,
+		},
+	},
 }
