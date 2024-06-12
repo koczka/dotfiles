@@ -18,6 +18,6 @@ require("keymaps")
 
 require("lazy").setup("plugins", {
 	ui = {
-		border = "rounded",
+		-- border = "rounded",
 	},
 })
