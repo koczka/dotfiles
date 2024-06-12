@@ -69,6 +69,8 @@ return {
 					TelescopeResultsNormal = { bg = telescope_results },
 					TelescopeResultsBorder = { bg = telescope_results, fg = telescope_results },
 					NavicIconsFile = { fg = colors.blue, bg = lualine_bg },
+					LazyNormal = { bg = telescope_results },
+					MasonNormal = { bg = telescope_results },
 				},
 			},
 		})
