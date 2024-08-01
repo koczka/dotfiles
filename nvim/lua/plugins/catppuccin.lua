@@ -3,7 +3,7 @@ return {
 	name = "catppuccin",
 	priority = 1000,
 	config = function()
-		local colors = require("catppuccin.palettes").get_palette("macchiato")
+		local colors = require("catppuccin.palettes").get_palette("latte")
 		local ucolors = require("catppuccin.utils.colors")
 		local telescope_prompt = ucolors.darken(colors.crust, 0.95, "#000000")
 		local telescope_results = ucolors.darken(colors.mantle, 0.95, "#000000")
@@ -14,8 +14,8 @@ return {
 
 		require("catppuccin").setup({
 			background = {
-				light = "macchiato",
-				dark = "macchiato",
+				light = "latte",
+				dark = "latte",
 			},
 			transparent_background = true,
 			integrations = {

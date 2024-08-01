@@ -1,8 +1,8 @@
 import = [
   # Cattpucc1n 
-  # "~/.dotfiles/alacritty/catppuccin/catppuccin-latte.toml"
+  "~/.dotfiles/alacritty/catppuccin/catppuccin-latte.toml"
   # "~/.dotfiles/alacritty/catppuccin/catppuccin-frappe.toml"
-  "~/.dotfiles/alacritty/catppuccin/catppuccin-macchiato.toml"
+  # "~/.dotfiles/alacritty/catppuccin/catppuccin-macchiato.toml"
   # "~/.dotfiles/alacritty/catppuccin/catppuccin-mocha.toml"
   # Everforest
   # "~/.dotfiles/alacritty/everforest/everforest-dark-hard.toml"
@@ -26,19 +26,19 @@ builtin_box_drawing = true
 size = 14
 
 [font.italic]
-family = "JetBrainsMonoNL Nerd Font"
+family = "JetBrainsMonoNL NF"
 
 [font.bold]
-family = "JetBrainsMonoNL Nerd Font"
+family = "JetBrainsMonoNL NF"
 
 [font.normal]
-family = "JetBrainsMonoNL Nerd Font"
+family = "JetBrainsMonoNL NF"
 
 [window]
 decorations = "buttonless"
 # decorations = "none"
 dynamic_padding = true
-opacity = 0.96
+opacity = 0.99
 blur = true
 
 [window.padding]
