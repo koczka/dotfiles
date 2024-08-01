@@ -45,7 +45,7 @@ return {
 					{ name = "nvim_lsp" },
 					{ name = "luasnip" }, -- For luasnip users.
 					{ name = "buffer" },
-					{ name = "path" }, -- file system paths
+					-- { name = "path" }, -- file system paths
 				}),
 				formatting = {
 					format = function(_, vim_item)
