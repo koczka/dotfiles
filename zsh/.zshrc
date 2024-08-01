@@ -10,6 +10,8 @@ export NVM_DIR="$HOME/.nvm"
   [ -s "/usr/local/opt/nvm/etc/bash_completion" ] && . "/usr/local/opt/nvm/etc/bash_completion"
 
 export PATH=~/.npm-global/bin:$PATH
+export PATH=/opt/homebrew/Cellar:$PATH
+
 
 # Path to your oh-my-zsh installation.
 export ZSH="/Users/dkoczka/.oh-my-zsh"
@@ -47,6 +49,7 @@ source ~/.secrets.zsh
 source $ZSH/oh-my-zsh.sh
 # source ~/.zsh/catppuccin_macchiato-zsh-syntax-highlighting.zsh
 source <(ng completion script)
+source <(fzf --zsh)
 
 # Aliases
 alias l='lsd -l'
