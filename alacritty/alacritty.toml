@@ -26,13 +26,13 @@ builtin_box_drawing = true
 size = 14
 
 [font.italic]
-family = "JetBrainsMonoNL NF"
+family = "JetBrainsMonoNL Nerd Font"
 
 [font.bold]
-family = "JetBrainsMonoNL NF"
+family = "JetBrainsMonoNL Nerd Font"
 
 [font.normal]
-family = "JetBrainsMonoNL NF"
+family = "JetBrainsMonoNL Nerd Font"
 
 [window]
 decorations = "buttonless"
