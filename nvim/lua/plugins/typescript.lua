@@ -1,5 +1,6 @@
 return {
-	"jose-elias-alvarez/typescript.nvim",
+	-- "jose-elias-alvarez/typescript.nvim",
+	"sergeiten/typescript.nvim",
 	config = function()
 		require("typescript").setup({
 			server = {

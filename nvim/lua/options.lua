@@ -9,6 +9,9 @@ opt.cmdheight = 0
 opt.relativenumber = true
 opt.number = true
 
+--disable swap file
+vim.opt.swapfile = false
+
 -- tabs and indent
 opt.tabstop = 2
 opt.shiftwidth = 2

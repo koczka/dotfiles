@@ -9,6 +9,7 @@ return {
 			sources = {
 				null_ls.builtins.formatting.stylua,
 				null_ls.builtins.formatting.prettier,
+				null_ls.builtins.formatting.xmllint,
 				-- null_ls.builtins.diagnostics.tsserver,
 				null_ls.builtins.diagnostics.stylelint.with({
 					condition = function(utils)

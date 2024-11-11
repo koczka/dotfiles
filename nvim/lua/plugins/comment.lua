@@ -7,5 +7,5 @@ return {
 			block = "gbc",
 		},
 	},
-	lazy = false,
+	lazy = true,
 }
