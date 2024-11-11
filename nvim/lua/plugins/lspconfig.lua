@@ -23,7 +23,7 @@ return {
 		}
 
 		-- Enable nvim cmp capabilities on servers
-		local servers = { "emmet_ls", "tailwindcss", "jsonls", "cssls", "html", "lua_ls", "tsserver" }
+		local servers = { "emmet_ls", "tailwindcss", "jsonls", "cssls", "html", "lua_ls", "ts_ls", "lemminx" }
 		for _, lsp in ipairs(servers) do
 			lspconfig[lsp].setup({
 				capabilities = capabilities,
@@ -33,6 +33,7 @@ return {
 		-- Angular server config
 		lspconfig.angularls.setup({
 			cmd = cmd,
+			filetypes = { "typescript", "html", "typescriptreact", "typescript.tsx", "htmlangular" },
 			capabilities = capabilities,
 			on_new_config = function(new_config, new_root_dir)
 				new_config.cmd = cmd
