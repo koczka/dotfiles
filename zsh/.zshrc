@@ -12,7 +12,6 @@ export NVM_DIR="$HOME/.nvm"
 export PATH=~/.npm-global/bin:$PATH
 export PATH=/opt/homebrew/Cellar:$PATH
 
-
 # Path to your oh-my-zsh installation.
 export ZSH="/Users/dkoczka/.oh-my-zsh"
 
@@ -58,13 +57,17 @@ alias vim="nvim"
 alias vi="nvim"
 alias cat="bat"
 alias zshrc="vi ~/.dotfiles/zsh/.zshrc"
+alias reloadzsh="source ~/.zshrc"
 alias tmuxrc="vi ~/.dotfiles/tmux/.tmux.conf"
 alias nvimrc="vi ~/.dotfiles/nvim/"
 alias alacrittyrc="vi ~/.dotfiles/alacritty/alacritty.toml"
 alias sketchyrc="vi ~/.dotfiles/sketchybar/sketchybarrc"
 alias restartsketchy="brew services restart sketchybar"
+alias lights='~/.dotfiles/lights.sh'
 
 bindkey -s '^g' 'lazygit\n'
+
+typeset -g POWERLEVEL9K_INSTANT_PROMPT=quiet
 
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
