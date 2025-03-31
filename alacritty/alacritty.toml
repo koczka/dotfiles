@@ -1,18 +1,8 @@
-import = [
-  # Cattpucc1n 
-  "~/.dotfiles/alacritty/catppuccin/catppuccin-latte.toml"
-  # "~/.dotfiles/alacritty/catppuccin/catppuccin-frappe.toml"
-  # "~/.dotfiles/alacritty/catppuccin/catppuccin-macchiato.toml"
-  # "~/.dotfiles/alacritty/catppuccin/catppuccin-mocha.toml"
-  # Everforest
-  # "~/.dotfiles/alacritty/everforest/everforest-dark-hard.toml"
-  # "~/.dotfiles/alacritty/everforest/everforest-dark-medium.toml"
-  # "~/.dotfiles/alacritty/everforest/everforest-dark-soft.toml"
-  # "~/.dotfiles/alacritty/everforest/everforest-light-hard.toml"
-  # "~/.dotfiles/alacritty/everforest/everforest-light-medium.toml"
-  # "~/.dotfiles/alacritty/everforest/everforest-light-soft.toml"
-]
+[general]
 live_config_reload = true
+import = [
+  "~/.dotfiles/alacritty/catppuccin/catppuccin-latte.toml"
+]
 
 [cursor.style]
 blinking = "Off"
@@ -38,7 +28,7 @@ family = "JetBrainsMonoNL Nerd Font"
 decorations = "buttonless"
 # decorations = "none"
 dynamic_padding = true
-opacity = 0.99
+opacity = 1
 blur = true
 
 [window.padding]
@@ -49,3 +39,4 @@ y = 6
 animation = 'EaseOutSine'
 duration = 200
 color = "#F5E0DC"
+
