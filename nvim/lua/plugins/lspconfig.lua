@@ -23,7 +23,7 @@ return {
 		}
 
 		-- Enable nvim cmp capabilities on servers
-		local servers = { "emmet_ls", "tailwindcss", "jsonls", "cssls", "html", "lua_ls", "ts_ls", "lemminx" }
+		local servers = { "emmet_ls", "tailwindcss", "jsonls", "cssls", "html", "lua_ls", "ts_ls", "lemminx", "bashls" }
 		for _, lsp in ipairs(servers) do
 			lspconfig[lsp].setup({
 				capabilities = capabilities,
