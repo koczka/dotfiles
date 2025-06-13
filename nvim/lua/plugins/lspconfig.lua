@@ -2,11 +2,9 @@ return {
 	"neovim/nvim-lspconfig",
 	lazy = false,
 	config = function()
-		vim.keymap.set("n", "<leader>rs", ":LspRestart<CR>", { noremap = true, silent = true }) -- mapping to restart lsp if necessary
-
 		local capabilities = require("cmp_nvim_lsp").default_capabilities()
 		local lspconfig = require("lspconfig")
-		local angularls_path = require("mason-registry").get_package("angular-language-server"):get_install_path()
+		local angularls_path = vim.fn.exepath("angular-language-server")
 		local cmd = {
 			"ngserver",
 			"--stdio",
