@@ -13,6 +13,7 @@ return {
 		local lualine_bg = colors.mantle
 
 		require("catppuccin").setup({
+			flavour = "latte",
 			background = {
 				light = "latte",
 				dark = "latte",
