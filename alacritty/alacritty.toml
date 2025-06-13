@@ -32,8 +32,8 @@ opacity = 1
 blur = true
 
 [window.padding]
-x = 10
-y = 6
+x = 12
+y = 8
 
 [bell]
 animation = 'EaseOutSine'
