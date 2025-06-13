@@ -1,6 +1,5 @@
 return {
 	"nvim-tree/nvim-tree.lua",
-	dependencies = { "nvim-tree/nvim-web-devicons" },
 	config = function()
 		-- recommended settings from nvim-tree documentation
 		vim.g.loaded = 1
