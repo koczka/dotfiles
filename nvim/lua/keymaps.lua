@@ -8,10 +8,6 @@ keymap.set("n", "<Up>", "<nop>")
 keymap.set("n", "<Down>", "<nop>")
 keymap.set("n", "<Left>", "<nop>")
 keymap.set("n", "<Right>", "<nop>")
--- keymap.set("i", "<Up>", "<nop>")
--- keymap.set("i", "<Down>", "<nop>")
--- keymap.set("i", "<Left>", "<nop>")
--- keymap.set("i", "<Right>", "<nop>")
 
 -- clear search highlights
 keymap.set("n", "<leader>cs", ":nohl<CR>")
@@ -43,8 +39,5 @@ keymap.set("n", "<C-u>", "<C-u>zz")
 keymap.set("n", "{", "}zz")
 keymap.set("n", "}", "{zz")
 
-----------------------
--- Plugin Keybinds
-----------------------
 -- lazy.nvim ui
 keymap.set("n", "<leader>la", ":Lazy<CR>")

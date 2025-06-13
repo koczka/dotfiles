@@ -1,6 +1,5 @@
-local opt = vim.opt -- for conciceness
-
 vim.env.PATH = "/opt/homebrew/opt/fzf" .. vim.env.PATH
+local opt = vim.opt
 
 --cmdheight
 opt.cmdheight = 0
@@ -17,9 +16,6 @@ opt.tabstop = 2
 opt.shiftwidth = 2
 opt.expandtab = true
 opt.autoindent = true
-
--- line wrapping
--- opt.wrap = false
 
 -- search settings
 opt.ignorecase = true
