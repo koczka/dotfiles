@@ -1,6 +1,9 @@
 vim.env.PATH = "/opt/homebrew/opt/fzf" .. vim.env.PATH
 local opt = vim.opt
 
+--autoread file after external change
+vim.opt.autoread = true
+
 --cmdheight
 opt.cmdheight = 0
 
