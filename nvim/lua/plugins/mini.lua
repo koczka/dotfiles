@@ -14,6 +14,16 @@ return {
 		end,
 	},
 	{
+		"nvim-mini/mini.surround",
+		version = "*",
+		opts = {
+			mappings = {
+				add = "sa", -- Add surrounding in Normal and Visual modes
+				delete = "sd", -- Delete surrounding
+			},
+		},
+	},
+	{
 		"echasnovski/mini.hipatterns",
 		version = false,
 		init = function()
