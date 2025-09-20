@@ -21,14 +21,12 @@ return {
 			transparent_background = true,
 			integrations = {
 				alpha = true,
-				cmp = true,
 				gitsigns = true,
 				indent_blankline = {
 					enabled = true,
 					scope_color = "blue",
 					colored_indent_levels = false,
 				},
-				lsp_saga = true,
 				mason = true,
 				noice = true,
 				notify = true,
@@ -37,6 +35,7 @@ return {
 					enabled = true,
 				},
 				treesitter = true,
+				blink_cmp = true,
 			},
 			highlight_overrides = {
 				all = {
@@ -72,6 +71,8 @@ return {
 					NavicIconsFile = { fg = colors.blue, bg = lualine_bg },
 					LazyNormal = { bg = telescope_results },
 					MasonNormal = { bg = telescope_results },
+					BlinkCmpMenu = { bg = telescope_results },
+					BlinkCmpDoc = { bg = telescope_results },
 				},
 			},
 		})

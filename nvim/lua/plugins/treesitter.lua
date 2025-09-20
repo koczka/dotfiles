@@ -34,8 +34,6 @@ return {
 				"markdown_inline",
 				"bash",
 				"lua",
-				"vim",
-				"dockerfile",
 				"gitignore",
 			},
 		})
