@@ -22,6 +22,7 @@ return {
 			autotag = { enable = true },
 			auto_install = true,
 			ensure_installed = {
+        "angular",
 				"json",
 				"javascript",
 				"typescript",
