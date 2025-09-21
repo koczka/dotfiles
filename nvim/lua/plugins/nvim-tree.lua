@@ -1,12 +1,10 @@
 return {
 	"nvim-tree/nvim-tree.lua",
 	config = function()
-		-- recommended settings from nvim-tree documentation
 		vim.g.loaded = 1
 		vim.g.loaded_netrwPlugin = 1
 		vim.keymap.set("n", "<leader>e", ":NvimTreeToggle<CR>", { noremap = true, silent = true })
 
-		-- configure nvim-tree
 		require("nvim-tree").setup({
 			update_cwd = true,
 			update_focused_file = {

@@ -5,8 +5,8 @@ return {
 	config = function()
 		local colors = require("catppuccin.palettes").get_palette("latte")
 		local ucolors = require("catppuccin.utils.colors")
-		local telescope_prompt = ucolors.darken(colors.crust, 0.95, "#000000")
-		local telescope_results = ucolors.darken(colors.mantle, 0.95, "#000000")
+		local telescope_prompt = ucolors.darken(colors.crust, 0.9, "#444444")
+		local telescope_results = ucolors.darken(colors.mantle, 0.9, "#444444")
 		local telescope_text = colors.text
 		local telescope_prompt_title = colors.sky
 		local telescope_preview_title = colors.teal
@@ -54,12 +54,12 @@ return {
 					TelescopePromptTitle = { fg = telescope_prompt, bg = telescope_prompt_title },
 					TelescopePreviewTitle = { fg = telescope_results, bg = telescope_preview_title },
 					TelescopePreviewBorder = {
-						bg = ucolors.darken(telescope_results, 0.95, "#000000"),
-						fg = ucolors.darken(telescope_results, 0.95, "#000000"),
+						bg = ucolors.darken(telescope_results, 0.95, "#444444"),
+						fg = ucolors.darken(telescope_results, 0.95, "#444444"),
 					},
 					TelescopePreviewNormal = {
-						bg = ucolors.darken(telescope_results, 0.95, "#000000"),
-						fg = telescope_results,
+						bg = ucolors.darken(telescope_results, 0.95, "#444444"),
+						fg = "#444444",
 					},
 					TelescopeResultsTitle = { fg = telescope_results, bg = telescope_preview_title },
 					TelescopeMatching = { fg = telescope_prompt_title },

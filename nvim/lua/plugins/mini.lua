@@ -1,16 +1,16 @@
 return {
+	{ "nvim-mini/mini.pairs", version = "*", opts = {} },
+	{ "nvim-mini/mini.ai", version = "*", opts = {} },
 	{
 		"nvim-mini/mini.surround",
 		version = "*",
 		opts = {
 			mappings = {
-				add = "sa", -- Add surrounding in Normal and Visual modes
-				delete = "sd", -- Delete surrounding
+				add = "sa",
+				delete = "sd",
 			},
 		},
 	},
-	{ "nvim-mini/mini.pairs", version = "*", opts = {} },
-	{ "nvim-mini/mini.ai", version = "*", opts = {} },
 	{
 		"echasnovski/mini.hipatterns",
 		version = false,
@@ -24,7 +24,6 @@ return {
 					todo = { pattern = "%f[%w]()TODO()%f[%W]", group = "MiniHipatternsTodo" },
 					note = { pattern = "%f[%w]()NOTE()%f[%W]", group = "MiniHipatternsNote" },
 
-					-- Highlight hex color strings (`#rrggbb`) using that color
 					hex_color = hipatterns.gen_highlighter.hex_color(),
 				},
 			})

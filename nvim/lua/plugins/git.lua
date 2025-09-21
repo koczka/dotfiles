@@ -1,13 +1,10 @@
 return {
+	{ "lewis6991/gitsigns.nvim", opts = {} },
 	{
 		"tpope/vim-fugitive",
 		config = function()
 			vim.keymap.set("n", "<leader>gb", "<cmd>Git blame<CR>", { noremap = true, silent = true })
 		end,
-	},
-	{
-		"lewis6991/gitsigns.nvim",
-		opts = {},
 	},
 	{
 		"f-person/git-blame.nvim",

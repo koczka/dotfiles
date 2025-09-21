@@ -36,7 +36,7 @@ keymap.set("n", "<C-u>", "<C-u>zz", bufopts)
 keymap.set("n", "{", "}zz", bufopts)
 keymap.set("n", "}", "{zz", bufopts)
 
--- lazy.nvim ui
+-- package manager ui
 keymap.set("n", "<leader>la", ":Lazy<CR>", bufopts)
 
 -- lsp
