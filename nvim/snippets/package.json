@@ -1,35 +1,23 @@
 {
-  "name": "Angular-BeastCode",
-  "publisher": "Mikael",
-  "displayName": "Angular 10 Snippets - TypeScript, Html, Angular Material, ngRx, RxJS & Flex Layout",
-  "description": "242 Angular Snippets (TypeScript, Html, Angular Material, Flex Layout, ngRx, RxJS, PWA & Testing)",
-  "icon": "images/Angular4.png",
-  "license": "MIT",
+  "name": "personal-snippets",
   "contributes": {
     "snippets": [
       {
-        "language": "typescript",
-        "path": "./angular/typescript.json"
-      },
-      {
-        "language": "typescript",
-        "path": "./ionic/typescript.json"
-      },
-      {
-        "language": "json",
-        "path": "./angular/json.json"
-      },
-      {
-        "language": "html",
-        "path": "./ionic/html.json"
-      },
-      {
-        "language": "html",
-        "path": "./ionic/html-utils.json"
+        "language": "htmlangular",
+        "path": "./angular/html.json"
       },
       {
         "language": "html",
         "path": "./angular/html.json"
+      },
+      {
+        "language": [
+          "typescript",
+          "javascript",
+          "typescriptreact",
+          "javascriptreact"
+        ],
+        "path": "./angular/typescript.json"
       }
     ]
   }

@@ -2,9 +2,7 @@ return {
 	{
 		"saghen/blink.cmp",
 		version = "1.*",
-		dependencies = { "L3MON4D3/LuaSnip", version = "v2.*" },
 		opts = {
-			snippets = { preset = "luasnip" },
 			keymap = {
 				preset = "default",
 				["<CR>"] = { "accept", "fallback" },
@@ -46,7 +44,7 @@ return {
 					Package = " ",
 					Property = " ",
 					Reference = " ",
-					Snippet = " ",
+					Snippet = "",
 					String = " ",
 					Struct = "󰆼 ",
 					TabNine = "󰏚 ",
@@ -75,9 +73,33 @@ return {
 			},
 			sources = {
 				default = { "lsp", "path", "snippets", "buffer" },
+				providers = {
+					lsp = {
+						min_keyword_length = 2, -- Number of characters to trigger porvider
+						score_offset = 0, -- Boost/penalize the score of the items
+					},
+					path = {
+						min_keyword_length = 0,
+					},
+					snippets = {
+						min_keyword_length = 2,
+					},
+					buffer = {
+						min_keyword_length = 5,
+						max_items = 5,
+					},
+				},
 			},
 			fuzzy = { implementation = "prefer_rust_with_warning" },
 		},
 		opts_extend = { "sources.default" },
 	},
+	-- {
+	-- 	"L3MON4D3/LuaSnip",
+	-- 	version = "v2.*",
+	-- 	opts = {},
+	-- 	config = function()
+	-- 		require("luasnip.loaders.from_vscode").load({ paths = "../../snippets/" })
+	-- 	end,
+	-- },
 }
