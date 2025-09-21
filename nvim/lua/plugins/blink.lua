@@ -94,12 +94,4 @@ return {
 		},
 		opts_extend = { "sources.default" },
 	},
-	-- {
-	-- 	"L3MON4D3/LuaSnip",
-	-- 	version = "v2.*",
-	-- 	opts = {},
-	-- 	config = function()
-	-- 		require("luasnip.loaders.from_vscode").load({ paths = "../../snippets/" })
-	-- 	end,
-	-- },
 }
