@@ -9,7 +9,8 @@ blinking = "Off"
 shape = "Beam"
 
 [env]
-TERM = "xterm-256color"
+# TERM = "xterm-256color"
+TERM = "tmux-256color"
 
 [font]
 builtin_box_drawing = true
@@ -26,17 +27,13 @@ family = "JetBrainsMonoNL NF"
 
 [window]
 decorations = "buttonless"
-# decorations = "none"
 dynamic_padding = true
-opacity = 1
-blur = true
 
 [window.padding]
-x = 12
-y = 8
+x = 8
+y = 6
 
 [bell]
 animation = 'EaseOutSine'
 duration = 200
 color = "#F5E0DC"
-
