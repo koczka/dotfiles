@@ -61,14 +61,27 @@ return {
 				},
 				completion = {
 					menu = {
-						auto_show = false,
+						auto_show = true,
+						preselect = false,
 					},
 					ghost_text = {
 						enabled = false,
 					},
+					list = {
+						selection = {
+							preselect = false,
+							auto_insert = true,
+						},
+					},
 				},
 			},
 			completion = {
+				list = {
+					selection = {
+						preselect = false,
+						auto_insert = true,
+					},
+				},
 				documentation = {
 					auto_show = true,
 				},
@@ -77,8 +90,8 @@ return {
 				default = { "lsp", "path", "snippets", "buffer" },
 				providers = {
 					lsp = {
-						min_keyword_length = 2, -- Number of characters to trigger porvider
-						score_offset = 0, -- Boost/penalize the score of the items
+						min_keyword_length = 0,
+						score_offset = 0,
 					},
 					path = {
 						min_keyword_length = 0,
