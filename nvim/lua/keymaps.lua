@@ -41,9 +41,15 @@ keymap.set("n", "<leader>la", ":Lazy<CR>", bufopts)
 
 -- lsp
 keymap.set("n", "<leader>dd", vim.diagnostic.setqflist, bufopts)
-keymap.set("n", "gD", vim.lsp.buf.declaration, bufopts)
-keymap.set("n", "gd", vim.lsp.buf.definition, bufopts)
+-- keymap.set("n", "gD", vim.lsp.buf.declaration, bufopts)
+keymap.set("n", "gD", vim.lsp.buf.definition, bufopts)
 keymap.set({ "n", "v" }, "<leader>ca", vim.lsp.buf.code_action, bufopts)
+keymap.set(
+  "n",
+  "<leader>d",
+  function() vim.diagnostic.open_float({ focusable = true }) end,
+  bufopts
+)
 
 -- telescope
 keymap.set("n", "<leader>ff", "<cmd>Telescope find_files<cr>", bufopts)
@@ -57,3 +63,8 @@ keymap.set("n", "<leader>fn", "<cmd>Telescope noice<cr>", bufopts)
 keymap.set("n", "<leader>oi", "<cmd>VtsExec organize_imports<cr>", bufopts)
 keymap.set("n", "<leader>ru", "<cmd>VtsExec remove_unused<cr>", bufopts)
 keymap.set("n", "<leader>mi", "<cmd>VtsExec add_missing_imports<cr>", bufopts)
+
+-- fold open/close
+--
+-- relative number toggle
+keymap.set("n", "<leader>re", "<cmd>setlocal relativenumber!<cr>", bufopts)

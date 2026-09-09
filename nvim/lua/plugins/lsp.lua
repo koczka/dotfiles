@@ -11,7 +11,9 @@ return {
         html = {},
         jsonls = {},
         lua_ls = {},
-        vtsls = {},
+        vtsls = {
+          init_options = { hostInfo = "neovim" },
+        },
       },
     },
     config = function(_, opts)

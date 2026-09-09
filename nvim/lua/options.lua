@@ -1,14 +1,14 @@
-vim.env.PATH = "/opt/homebrew/opt/fzf" .. vim.env.PATH
+vim.env.PATH = "/home/linuxbrew/.linuxbrew/opt/fzf" .. vim.env.PATH
 local opt = vim.opt
 
 --autoread file after external change
 vim.opt.autoread = true
 
 --cmdheight
-opt.cmdheight = 0
+opt.cmdheight = 6
 
 -- line numbers
-opt.relativenumber = true
+opt.relativenumber = false
 opt.number = true
 
 --disable swap file
@@ -38,7 +38,7 @@ opt.backspace = "indent,eol,start"
 -- opt.colorcolumn = "80"
 
 -- clipboard
-opt.clipboard:append("unnamedplus")
+opt.clipboard = "unnamedplus"
 
 -- split windows
 opt.splitright = true
@@ -48,7 +48,9 @@ opt.splitbelow = true
 opt.iskeyword:append("-")
 
 -- disable mouse support
-vim.opt.mouse = ""
+-- vim.opt.mouse = ""
 
 vim.opt.title = true
 vim.opt.backup = false
+
+-- copilot
