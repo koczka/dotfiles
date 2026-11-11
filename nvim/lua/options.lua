@@ -47,10 +47,5 @@ opt.splitbelow = true
 -- keyword
 opt.iskeyword:append("-")
 
--- disable mouse support
--- vim.opt.mouse = ""
-
 vim.opt.title = true
 vim.opt.backup = false
-
--- copilot
