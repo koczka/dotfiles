@@ -5,7 +5,7 @@ if [[ -r "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh" ]]
   source "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh"
 fi
 
-  export NVM_DIR="$HOME/.nvm"
+export NVM_DIR="$HOME/.nvm"
   [ -s "/home/linuxbrew/.linuxbrew/opt/nvm/nvm.sh" ] && \. "/home/linuxbrew/.linuxbrew/opt/nvm/nvm.sh"  # This loads nvm
   [ -s "/home/linuxbrew/.linuxbrew/opt/nvm/etc/bash_completion.d/nvm" ] && \. "/home/linuxbrew/.linuxbrew/opt/nvm/etc/bash_completion.d/nvm"  # This loads nvm bash_completion
 
@@ -13,6 +13,7 @@ export PATH="/opt/homebrew/opt/openjdk@17/bin:$PATH"
 
 export PATH=~/.npm-global/bin:$PATH
 export PATH=/opt/homebrew/Cellar:$PATH
+export PATH="/home/dkoczka/.local/bin:$PATH"
 
 export BREW_HOME="/home/linuxbrew/.linuxbrew/bin"
 export PATH="$PATH:$BREW_HOME"
