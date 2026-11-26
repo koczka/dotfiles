@@ -61,6 +61,7 @@ alias reloadzsh="source ~/.zshrc"
 alias tmuxrc="nvim ~/.dotfiles/tmux/.tmux.conf"
 alias nvimrc="nvim ~/.dotfiles/nvim/"
 alias alacrittyrc="nvim ~/.dotfiles/alacritty/alacritty.toml"
+alias ghosttyrc="nvim ~/.config/ghostty/config.ghostty"
 
 bindkey -s '^g' 'lazygit\n'
 
